@@ -16,6 +16,9 @@ function Loading() {
   return <div className="text-center p-5">Loading...</div>;
 }
 
+
+
+
 // ✅ PrivateRoute wrapper for v6
 function PrivateRoute({ children }) {
   const { user, loading } = useUser();

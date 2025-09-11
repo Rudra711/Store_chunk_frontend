@@ -14,8 +14,8 @@ export default function File({ file, refresh }) {
     return file.type === "image" || file.extension?.toLowerCase() === "pdf";
   }, [file.type, file.extension]);
 
-  const BASE_URL = "http://localhost:5000";
-  const fileViewUrl = `${BASE_URL}${file.fileUrl}`;
+  const API_BASE = import.meta.env.VITE_API_URL ;
+  const fileViewUrl = `${API_BASE}${file.fileUrl}`;
 
   // ✅ Secure download with JWT
   const handleDownload = async () => {
