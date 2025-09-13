@@ -32,7 +32,7 @@ export default function UpdateProfile() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await fetch(`${API_BASE}/api/auth/update-profile`, {
+      const res = await fetch(`${API_BASE}/auth/update-profile`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
