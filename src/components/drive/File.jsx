@@ -15,8 +15,8 @@ export default function File({ file, refresh }) {
   }, [file.type, file.extension]);
 
   const API_BASE = import.meta.env.VITE_API_URL ;
-  console.log("API BASE:-",API_BASE);
-  console.log("file.fileUrl:-",file.fileUrl);
+  // console.log("API BASE:-",API_BASE);
+  // console.log("file.fileUrl:-",file.fileUrl);
   const fileViewUrl = `${file.fileUrl}`;
 
   // ✅ Secure download with JWT
